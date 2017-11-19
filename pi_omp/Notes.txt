@@ -1,0 +1,10 @@
+Notes on PGI compiler
+1) it could not handel more than precision 15,
+   anything more than selected_real_kind(15) throws an error
+   saying something about negative numbers. As such the answer
+   is not passing the accuracy beyond 13th digit.
+   
+2) Full compilation on PGI:
+    pgifortran -Mfree -O3 -fastsse -mp -Minfo -o pi.x pi.f90
+
+3) export OMP_NUM_THRADS=#	

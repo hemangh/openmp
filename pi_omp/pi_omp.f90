@@ -2,9 +2,9 @@
         use, intrinsic :: iso_fortran_env
         implicit none
         integer, parameter  :: sp = REAL32
-        integer, parameter  :: dp = selected_real_kind(19,307)!REAL64
-        integer, parameter  :: qp = REAL128
-        real(dp), parameter :: numsteps = 40000000
+        integer, parameter  :: dp = selected_real_kind(15)!,307)!REAL64
+        !integer, parameter  :: qp = REAL128
+        real(dp), parameter :: numsteps = 10240000000
       end module params
 
         program pi_mp
