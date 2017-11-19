@@ -1,0 +1,15 @@
+Recursive functional program test.
+
+GNU compiler is behaving very badly. It really does not parallelize task based
+compiles. I should try c/c++ version of the code to compare
+
+ifort performs ok, but inconsistently. Can't determine if it is due to tasks
+or the busy OS system at times. Basically 4 cores behave questionably on a Mac
+with 4 cores maximum.
+
+cores 	 time
+  1       2.1      
+  2       1.1 
+  3       0.8 
+  4       0.6-0.8 
+  >       same as above
