@@ -22,7 +22,7 @@ cores 	 time
   4       0.6-0.8 
   >       same as above
 
-pgi performance ok, worse than intel, but could be machine difference:
+pgi community Ed. performance ok, c and fortran behave similar to each other, worse than intel, but could be machine difference:
 This time on an i5 windows system, with two physical cores @2.53GHz, but 4 logical.I can't check things consistantly on one machine.
 cores    time
   1       4
