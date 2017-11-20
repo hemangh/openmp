@@ -13,7 +13,7 @@ for gcc compiler:
 
 ifort performs ok, but inconsistently. Can't determine if it is due to tasks
 or the busy OS system at times. Basically 4 cores behave questionably on a Mac
-with 4 cores maximum.
+with 4 cores maximum (i7 4 physical cores @2.6GHz).
 ifort compiler:
 cores 	 time
   1       2.1      
@@ -21,3 +21,11 @@ cores 	 time
   3       0.8 
   4       0.6-0.8 
   >       same as above
+
+pgi performance ok, worse than intel, but could be machine difference:
+This time on an i5 windows system, with two physical cores @2.53GHz, but 4 logical.I can't check things consistantly on one machine.
+cores    time
+  1       4
+  2       2.3
+  3       2.2
+  4       2.2
